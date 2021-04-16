@@ -159,24 +159,24 @@ Resources:
   tup3 = "a", "b", "c", "d";
   
   
-  >>> arr = ("one", "two", "three")
-  >>> arr[0]
+  >>> tup = ("one", "two", "three")
+  >>> tup[0]
   'one'
 
 
   # Tuples have a nice repr:
-  >>> arr
+  >>> tup
   ('one', 'two', 'three')
 
 
   # Tuples are immutable:
-  >>> arr[1] = "hello"
+  >>> tup[1] = "hello"
   Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
   TypeError: 'tuple' object does not support item assignment
 
 
-  >>> del arr[1]
+  >>> del tup[1]
   Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
   TypeError: 'tuple' object doesn't support item deletion
@@ -184,7 +184,7 @@ Resources:
 
   # Tuples can hold arbitrary data types:
   # (Adding elements creates a copy of the tuple)
-  >>> arr + (23,)
+  >>> tup + (23,)
   ('one', 'two', 'three', 23)
   
   ```
