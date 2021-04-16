@@ -16,6 +16,8 @@ Resources:
   - [Priority Queues](#Priority-Queues)
 
 # Lists
+
+  The list is a most versatile datatype available in Python which can be written as a list of comma-separated values (items) between square brackets. An advantage of using a     list is that iems in a list do not need to be of the same type.
   
   ## Functions:
   ```python
@@ -84,19 +86,23 @@ Resources:
   >>> arr[0]
   'one'
 
+
   # Printing a list 
   >>> arr
   ['one', 'two', 'three']
+
 
   # Lists are mutable:
   >>> arr[1] = "hello"
   >>> arr
   ['one', 'hello', 'three']
 
+
   # You can easily delete elements from a list with the del command
   >>> del arr[1]
   >>> arr
   ['one', 'three']
+
 
   # Lists can hold arbitrary data types:
   >>> arr.append(23)
@@ -110,27 +116,74 @@ Resources:
   >>> fruits.count('apple')
   2
   
+  
   >>> fruits.count('tangerine')
   0
+  
   
   >>> fruits.index('banana')
   3
   
+  
   >>> fruits.index('banana', 4)  # Find next banana starting a position 4
   6
+  
   
   >>> fruits.reverse()
   >>> fruits
   ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']
   
+  
   >>> fruits.append('grape')
   >>> fruits
   ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']
+  
   
   >>> fruits.sort()
   >>> fruits
   ['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']
   
+  
   >>> fruits.pop()
   'pear'
  ```
+ 
+ # Tuples
+ 
+  A tuple is a collection of objects which ordered and immutable. Tuples are sequences, just like lists. The differences between tuples and lists are, the tuples cannot be       changed unlike lists and tuples use parentheses, whereas lists use square brackets.
+  
+  ```python
+  tup1 = ('physics', 'chemistry', 1997, 2000);
+  tup2 = (1, 2, 3, 4, 5 );
+  tup3 = "a", "b", "c", "d";
+  
+  
+  >>> arr = ("one", "two", "three")
+  >>> arr[0]
+  'one'
+
+
+  # Tuples have a nice repr:
+  >>> arr
+  ('one', 'two', 'three')
+
+
+  # Tuples are immutable:
+  >>> arr[1] = "hello"
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  TypeError: 'tuple' object does not support item assignment
+
+
+  >>> del arr[1]
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  TypeError: 'tuple' object doesn't support item deletion
+
+
+  # Tuples can hold arbitrary data types:
+  # (Adding elements creates a copy of the tuple)
+  >>> arr + (23,)
+  ('one', 'two', 'three', 23)
+  
+  ```
