@@ -188,3 +188,65 @@ Resources:
   ('one', 'two', 'three', 23)
   
   ```
+  
+  # Sets
+  
+   A set is an unordered collection of objects that doesn’t allow duplicate elements. Typically, sets are used to quickly test a value for membership in the set, to insert or      delete new values from a set, and to compute the union or intersection of two sets.
+    
+   ```python
+   
+   #You can initialize a set in two ways
+   >>> x = set(['foo', 'bar', 'baz', 'foo', 'qux'])
+   >>> x
+   {'qux', 'foo', 'bar', 'baz'}
+
+
+   >>> x = set(('foo', 'bar', 'baz', 'foo', 'qux'))
+   >>> x
+   {'qux', 'foo', 'bar', 'baz'}
+   
+   
+   # Modifying sets
+   >>> x = {'foo', 'bar', 'baz'}
+
+   >>> x.add('qux')
+   >>> x
+   {'bar', 'baz', 'foo', 'qux'}
+
+
+   >>> x = {'foo', 'bar', 'baz'}
+
+   >>> x.remove('baz')
+   >>> x
+   {'bar', 'foo'}
+
+   
+   # Checking for values in sets
+   >>> vowels = {"a", "e", "i", "o", "u"}
+   >>> "e" in vowels
+   True
+
+    
+   >>> s = 'quux'
+
+   >>> list(s)
+   ['q', 'u', 'u', 'x']
+   
+   >>> set(s)
+   {'x', 'u', 'q'}
+
+
+   >>> letters = set("alice")
+   >>> letters.intersection(vowels)
+   {'a', 'e', 'i'}
+
+
+   >>> vowels.add("x")
+   >>> vowels
+   {'i', 'a', 'u', 'o', 'x', 'e'}
+
+
+   >>> len(vowels)
+   6
+    
+   ```
