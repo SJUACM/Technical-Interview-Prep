@@ -1,4 +1,4 @@
-# Data-Structures
+# Technical Interview Prep
 Overview and explanation of data structures in python. This is perfect review material for technical interviews!
 
 Resources:
@@ -6,14 +6,18 @@ Resources:
   - https://docs.python.org/3/tutorial/datastructures.html
 
 # Contents
-  - [Lists](#Lists)
-  - [Tuples](#Tuples)
-  - [Sets](#Sets)
-  - [Dictionaries](#Dictionaries)
-  - [Linked-Lists](#Linked-Lists)
-  - [Stacks](#Stacks)
-  - [Queues](#Queues)
-  - [Priority Queues](#Priority-Queues)
+  - [Data-Structures](#Data-Structures)
+    - [Lists](#Lists)
+    - [Tuples](#Tuples)
+    - [Sets](#Sets)
+    - [Dictionaries](#Dictionaries)
+    - [Linked-Lists](#Linked-Lists)
+    - [Stacks](#Stacks)
+    - [Queues](#Queues)
+    - [Priority Queues](#Priority-Queues)
+
+
+# Data Structures
 
 # Lists
 
