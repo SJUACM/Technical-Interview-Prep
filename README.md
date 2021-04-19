@@ -6,7 +6,7 @@ Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufp
 
 # Contents
   - [Data-Structures](#Data-Structures)
-  -
+  
     - [Lists](#Lists)
     - [Tuples](#Tuples)
     - [Sets](#Sets)
