@@ -1,12 +1,12 @@
 # Technical Interview Prep
 Overview and explanation of data structures in python. This is perfect review material for technical interviews!
 
-Resources:
-  - https://realpython.com/python-data-structures/
-  - https://docs.python.org/3/tutorial/datastructures.html
+Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufpe.br/~fbma/Crack/Cracking%20the%20Coding%20Interview%20189%20Programming%20Questions%20and%20Solutions.pdf)  
+
 
 # Contents
   - [Data-Structures](#Data-Structures)
+  -
     - [Lists](#Lists)
     - [Tuples](#Tuples)
     - [Sets](#Sets)
@@ -18,6 +18,12 @@ Resources:
 
 
 # Data Structures
+  
+  Data Structures are essential to understand for technical interviews and especially for Software Engineering roles. When given a coding problem, you have to know the optimal data structure to use in order to solve the problem in the most efficient way. For these interviews, just solving the problem is not enough to land you an offer, you have to be mindful of the time complexity and memory usage of your solution because they should be as minimal as possible. A solution that runs in O(n) is clearly better than a solution that runs in O(n^2), and this is why you have to be very skilled in knowing how to calculate the time complexity of your solution. 
+  
+  ### Best Websites to Learn Data Structures:
+  - https://realpython.com/python-data-structures/
+  - https://docs.python.org/3/tutorial/datastructures.html
 
 # Lists
 
