@@ -26,7 +26,7 @@ Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufp
 
 # Data Structures
   
-  Data Structures are essential to understand for technical interviews and especially for Software Engineering roles. When given a coding problem, you have to know the optimal data structure to use in order to solve the problem in the most efficient way. For these interviews, just solving the problem is not enough to land you an offer, you have to be mindful of the time complexity and memory usage of your solution because they should be as minimal as possible. A solution that runs in O(n) is clearly better than a solution that runs in O(n^2), and this is why you have to be very skilled in knowing how to calculate the time complexity of your solution. 
+  Data Structures are essential to understand for technical interviews and especially for Software Engineering roles. When given a coding problem, you have to know the optimal data structure to use in order to solve the problem in the most efficient way. For these interviews, just solving the problem is not enough to land you an offer, you have to be mindful of the time complexity and memory usage of your solution because they should be as minimal as possible. A solution that runs in O(n) is clearly better than a solution that runs in O(n^2), and this is why you have to also be very skilled in knowing how to calculate the time complexity of your solution. 
   
   ### Best Websites to Learn Data Structures:
   - https://realpython.com/python-data-structures/
