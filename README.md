@@ -274,4 +274,5 @@ Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufp
 
 # Practice Problems
 
+  - [LeetCode](https://leetcode.com/problemset/all/) is one of the best platforms to use to prep for technical interviews. On the website, you have access to over 1,000 coding problems for free, which you can complete and compare your answers with other people. The platform shows you the time and space complexity for your solutions, and is the perfect way to improve your programming skills and devise efficient solutions. 
  
