@@ -15,6 +15,13 @@ Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufp
     - [Stacks](#Stacks)
     - [Queues](#Queues)
     - [Priority Queues](#Priority-Queues)
+    
+  - [Dynamic Programming](#Dynamic Programming)
+
+  - [Practice Problems](#Practice Problems)
+  
+
+
 
 
 # Data Structures
@@ -260,3 +267,11 @@ Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufp
    6
     
    ```
+   
+#Dynamic Programming
+
+
+
+# Practice Problems
+
+ 
