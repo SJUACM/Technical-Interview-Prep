@@ -16,9 +16,9 @@ Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufp
     - [Queues](#Queues)
     - [Priority Queues](#Priority-Queues)
     
-  - [Dynamic Programming](#Dynamic Programming)
+  - [Dynamic Programming](#Dynamic-Programming)
 
-  - [Practice Problems](#Practice Problems)
+  - [Practice Problems](#Practice-Problems)
   
 
 
@@ -268,7 +268,7 @@ Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufp
     
    ```
    
-#Dynamic Programming
+# Dynamic Programming
 
 
 
