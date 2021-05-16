@@ -274,5 +274,11 @@ Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufp
 
 # Practice Problems
 
-  - [LeetCode](https://leetcode.com/problemset/all/) is one of the best platforms to use to prep for technical interviews. On the website, you have free access to over 1,000 coding problems, which you can complete and compare your answers with other people. The platform shows you the time and space complexity for your solutions, and is the perfect way to improve your programming skills and devise efficient solutions. 
+  - [LeetCode](https://leetcode.com/problemset/all/) is one of the best platforms to use to prep for technical interviews. On the website, you have free access to over 1,000 coding problems, which you can complete and compare your answers with other people. The platform shows you the time and space complexity for your solutions, and is the perfect way to improve your programming skills. 
+
+ - [Company-Wise Practice Problems](https://practice.geeksforgeeks.org/company-tags)
+
+ - [Must Do Coding Problems (Company Wise)](https://www.geeksforgeeks.org/must-coding-questions-company-wise/)
+
+ - [Must Do Coding Problems (Topic-Wise)](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/)
  
