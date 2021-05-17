@@ -1,7 +1,7 @@
 # Technical Interview Prep
 A full guide on how to prepare for technical interviews! From soft skills to algorithm analysis, this github page provides the necessary material to help you secure a job offer!
 
-Access the [Cracking the Coding Interview Book Free E-Book here](https://cin.ufpe.br/~fbma/Crack/Cracking%20the%20Coding%20Interview%20189%20Programming%20Questions%20and%20Solutions.pdf)  
+Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/~fbma/Crack/Cracking%20the%20Coding%20Interview%20189%20Programming%20Questions%20and%20Solutions.pdf)  
 
 
 # Contents
