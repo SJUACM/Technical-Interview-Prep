@@ -16,6 +16,8 @@ Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/
     - [Queues](#Queues)
     - [Priority Queues](#Priority-Queues)
     
+  - [Calculating Time & Space Complexity](#Time-and-Space-Complexity)  
+    
   - [Dynamic Programming](#Dynamic-Programming)
 
   - [Practice Problems](#Practice-Problems)
@@ -28,7 +30,7 @@ Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/
   
   Data Structures are essential to understand for technical interviews and especially for Software Engineering roles. When given a coding problem, you have to know the optimal data structure to use in order to solve the problem in the most efficient way. For these interviews, just solving the problem is not enough to land you an offer, you have to be mindful of the time complexity and memory usage of your solution because they should be as minimal as possible. A solution that runs in O(n) is clearly better than a solution that runs in O(n^2), and this is why you have to also be very skilled in knowing how to calculate the time complexity of your solution. 
   
-  ### Best Websites to Learn Data Structures:
+  ### Best Websites to Learn about Data Structures:
   - https://realpython.com/python-data-structures/
   - https://docs.python.org/3/tutorial/datastructures.html
 
@@ -267,7 +269,17 @@ Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/
    6
     
    ```
-   
+
+# Time and Space Complexity
+ 
+  - Knowing how to calculate the time and space complexity for an algorithm is essential if you want to land a Software Engineering role. When given a problem, it is crucial 
+    to devise the most optimal solution which takes the least time and space to execute. This requires an understanding of Big-O notation, which will be explained through a         series of examples. 
+ 
+  - Learn more about Time Complexity [here](https://www.kdnuggets.com/2020/06/time-complexity-measure-efficiency-algorithms.html) and [here](https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/)
+  - Learn more about Space Complexity [here](https://www.baeldung.com/cs/space-complexity) 
+ 
+ 
+ 
 # Dynamic Programming
 
 
