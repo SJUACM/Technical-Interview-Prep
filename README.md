@@ -274,7 +274,15 @@ Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/
  
   - Knowing how to calculate the time and space complexity for an algorithm is essential if you want to land a Software Engineering role. When given a problem, it is crucial 
     to devise the most optimal solution which takes the least time and space to execute. This requires an understanding of Big-O notation, which will be explained through a         series of examples. 
- 
+  
+  
+  
+  
+    ### Big-O Cheat Sheet:
+  
+  <img width="1433" alt="bigOcheatsheet" src="https://user-images.githubusercontent.com/43652410/119038596-4b4a1c80-b981-11eb-9759-7b69884e6681.png">
+
+
   - Learn more about Time Complexity [here](https://www.kdnuggets.com/2020/06/time-complexity-measure-efficiency-algorithms.html) and [here](https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/)
   - Learn more about Space Complexity [here](https://www.baeldung.com/cs/space-complexity) 
  
