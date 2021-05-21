@@ -280,8 +280,13 @@ Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/
   
     ### Big-O Cheat Sheet
   
-  <img width="1433" alt="bigOcheatsheet" src="https://user-images.githubusercontent.com/43652410/119038596-4b4a1c80-b981-11eb-9759-7b69884e6681.png">
+     <p align="center">
+        <img width="1500" alt="bigOcheatsheet" src="https://user-images.githubusercontent.com/43652410/119038596-4b4a1c80-b981-11eb-9759-7b69884e6681.png">
+        <img width="700" alt="sortingcheatsheet" src="https://user-images.githubusercontent.com/43652410/119176675-64160900-ba39-11eb-895a-16c05235d8cb.png">
+     </p>
+ 
 
+  
 
   - Learn more about Time Complexity [here](https://www.kdnuggets.com/2020/06/time-complexity-measure-efficiency-algorithms.html) and [here](https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/)
   - Learn more about Space Complexity [here](https://www.baeldung.com/cs/space-complexity) 
