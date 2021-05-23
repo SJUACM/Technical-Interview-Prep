@@ -16,7 +16,7 @@
     transition: background.6s ease;
     box-shadow: var(--box-shadow);
     height: 50px;
-    width: 100px;
+    width: 150px;
     padding:0.5em;
 }
 
@@ -25,7 +25,7 @@
     color: whitesmoke;
     box-shadow: var(--box-shadow);
     height: 50px;
-    width: 100px;
+    width: 125px;
     letter-spacing: 0.2pt;
 }
 
