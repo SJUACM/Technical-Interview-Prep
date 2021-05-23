@@ -1,0 +1,49 @@
+
+/* Global classes */
+
+.button {
+    padding: 1.15rem 2.2rem;
+    font: var(--roboto);
+    position: relative;
+    border: 4px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button {    
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background.6s ease;
+    box-shadow: var(--box-shadow);
+    height: 50px;
+    width: 100px;
+    padding:0.5em;
+}
+
+.btn-primary {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+    height: 50px;
+    width: 100px;
+    letter-spacing: 0.2pt;
+}
+
+
+/*
+.button.primary-button:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.button.primary-button::after {
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+*/
