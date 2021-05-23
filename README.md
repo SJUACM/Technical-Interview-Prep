@@ -13,10 +13,10 @@ Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/
     - [Tuples](#Tuples)
     - [Sets](#Sets)
     - [Dictionaries](#Dictionaries)
-    - [Linked-Lists](#Linked-Lists)
     - [Stacks](#Stacks)
     - [Queues](#Queues)
-    - [Priority Queues](#Priority-Queues)
+    - [Linked-Lists](#Linked-Lists)
+    - [Binary-Trees](#Binary-Trees)
     
   - [Calculating Time & Space Complexity](#Time-and-Space-Complexity)  
     
