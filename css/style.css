@@ -73,7 +73,13 @@
     padding-left: 70px;
 }
 
+/* Lists Page */
 
-/* End Banner Area */
+.desc-para {
+    font-size: 19px; 
+    font-weight: 400;
+    line-height: 32px; 
+    margin-top: 10px;
+}
 
 
