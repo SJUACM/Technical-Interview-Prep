@@ -38,7 +38,7 @@ Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/
 
 # Lists
 
-  The list is a most versatile datatype available in Python which can be written as a list of comma-separated values (items) between square brackets. An advantage of using a     list is that iems in a list do not need to be of the same type.
+ Lists are the most versatile datatype available in Python and can be written as a list of comma-separated values (items) between square brackets. An advantage of using a     list is that iems in a list do not need to be of the same type.
   
   ## Functions:
   ```python
