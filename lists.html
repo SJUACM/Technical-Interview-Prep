@@ -20,6 +20,13 @@
 
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="./css/responsive.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
 </head>
 <body>
     
@@ -104,7 +111,82 @@
           </section>
       <!-- ====================== End Banner Area ====================== -->
     
+      <div class="container" style="margin-left: 20%; padding-bottom: 50px;">
+        
+        <h4>Creating a List</h4>
+        
+        <pre><code class="python code-snippet">
+          # Create an empty list
+          nums = []
 
+          # Adding values to the list
+          nums.append(1)
+          nums.append(2)
+          nums.append(3)
+          nums.append(4)
+          
+          print(nums)
+          >>> [1, 2, 3, 4]
+
+
+          # You can also initialize a list with values
+          nums = [1, 2, 3, 4]
+
+          print(nums)
+          >>> [1, 2, 3, 4]
+
+
+          # Lists can also contain different data types
+          myList = [5, "Hello", 3.14, True]
+
+
+          # Creating a list of lists (2D / Nested lists) 
+          myList = [["Faizan", 2], ["John", 5], ["Steve", 6]]
+        </code></pre>
+
+        <h4 style="margin-top: 50px;">Accessing List Elements</h4>
+        
+        <pre><code class="python code-snippet">
+          nums = [10, 20, 30, 40, 50, 60]
+
+          # Accessing specific elements
+
+          firstNum = nums[0] # First element
+          lastNum = nums[-1] # Last element
+
+          print(firstNum)
+          print(lastNum)
+          >>> 10 
+          >>> 50
+
+
+          # Accessing multiple elements (slicing)
+
+          first3 = nums[0 : 3]
+          print(first3)
+          >>> [10, 20, 30]
+
+
+          last3 = nums[-3 : ]
+          print(last3)
+          >>> [40, 50, 60]
+
+          
+          # Accessing elements in 2D Lists
+
+          myList = [["Faizan", 2], ["John", 5], ["Steve", 6], ["Mike", 9]]
+          
+          firstElementName = myList[0][0]
+          print(firstElementName)
+          >>> Faizan
+
+          lastElementName = myList[-1][0]
+          print(lastElementName)
+          >>> Steve
+        </code>
+
+
+        </div>
 
 
     </main>

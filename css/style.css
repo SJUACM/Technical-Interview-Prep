@@ -76,10 +76,17 @@
 /* Lists Page */
 
 .desc-para {
-    font-size: 23px; 
-    font-weight: 350;
+    font-size: 20px; 
+    font-weight: 400;
     line-height: 32px; 
     margin-top: 10px;
 }
 
+.code-snippet{
+    margin-top: 15px; 
+    width:80%; 
+    text-align: left; 
+    padding-bottom: 10px;
+    margin-left: -5%;
+}
 
