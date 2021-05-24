@@ -44,7 +44,7 @@
                     <div class="mr-auto"></div>
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" href="../datastructures.html">Data Structures</a>
+                      <a class="nav-link active" href="../datastructures.html">Data Structures</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="../About Me.html">Algorithms</a>
@@ -93,7 +93,7 @@
                       </div>
 
                       <div class="list-group" style="padding: 5rem; margin-left: 12%; width: 325px; margin-top: 5px;">
-                        <a href="../datastructures/lists.html" class="list-group-item list-group-item-action">Lists</a>
+                        <a href="../datastructures/lists.html" class="list-group-item list-group-item-action btn-active">Lists</a>
                         <a href="#" class="list-group-item list-group-item-action">Tuples</a>
                         <a href="#" class="list-group-item list-group-item-action">Sets</a>
                         <a href="#" class="list-group-item list-group-item-action">Dictionaries</a>
@@ -110,10 +110,24 @@
               </div>
           </section>
       <!-- ====================== End Banner Area ====================== -->
-    
+
+      <div class="container" style="margin-left: 19%; padding-bottom: 50px;">
+        <h3>Contents</h3>
+        
+        <ul style="font-size: 19px;">
+          
+          <li style="margin-top: 25px;"><a href="#Creating-a-List">Creating a List</a></li>
+          <li style="margin-top: 15px;"><a href="##Accessing-List-Elements">Accessing List Elements</a></li>
+          <li style="margin-top: 15px;"><a href="##Adding-Modifying-List-Elements">Adding / Modifying List Elements</a></li>
+          <li style="margin-top: 15px;"><a href="##Combining-Lists">Combining Lists</a></li>
+          <li style="margin-top: 15px;"><a href="##Deleting-Removing-List-Elements">Deleting / Removing List Elements</a></li>
+        </ul>
+
+      </div>
+
       <div class="container" style="margin-left: 20%; padding-bottom: 50px;">
         
-        <h4>Creating a List</h4>
+        <h4><a id ="#Creating-a-List">Creating a List</a></h4>
         
         <pre><code class="python code-snippet">
           # Create an empty list
@@ -137,7 +151,6 @@
 
 
           # The * operator can be used to create repeated lists 
-          
           nums = [1, 2, 3] * 3
           
           print(nums)
@@ -154,7 +167,7 @@
 
 
 
-        <h4 style="margin-top: 50px;">Accessing List Elements</h4>
+        <h4 style="margin-top: 50px;"><a id ="#Accessing-List-Elements">Accessing List Elements</a></h4>
         
 
         <pre><code class="python code-snippet">
@@ -163,24 +176,34 @@
           nums = [10, 20, 30, 40, 50, 60]
 
           firstNum = nums[0] # First element
-          lastNum = nums[-1] # Last element
-
           print(firstNum)
+          >>> 10
+
+          lastNum = nums[-1] # Last element
           print(lastNum)
-          >>> 10 
           >>> 60
 
 
           # Accessing multiple elements (slicing)
 
+          nums = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+
           first3 = nums[0 : 3]
+
           print(first3)
-          >>> [10, 20, 30]
+          >>> [5, 10, 15]
+
+
+          elements5ToEnd = nums[4 : ]
+
+          print(elements5ToEnd)
+          >>> [25, 30, 35, 40, 45, 50]
 
 
           last3 = nums[-3 : ]
+
           print(last3)
-          >>> [40, 50, 60]
+          >>> [40, 45, 50]
 
           
           # Accessing elements in 2D Lists
@@ -196,7 +219,7 @@
           >>> Steve
         </code></pre>
 
-        <h4 style="margin-top: 50px;">Adding / Modifying List Elements</h4>
+        <h4 style="margin-top: 50px;"><a id ="#Adding-Modifying-List-Elements">Adding / Modifying List Elements</a></h4>
 
         <pre><code class="python code-snippet">
           # Changing specific elements
@@ -223,15 +246,32 @@
 
           # Adding singular elements to a list is done through the append() function
 
-          nums1 = [1, 2, 3, 4, 5]
+          nums = [1, 2, 3, 4, 5]
 
-          nums1.append(6)
+          nums.append(6)
 
-          print(nums1)
+          print(nums)
           >>> [1, 2, 3, 4, 5, 6]
 
+          
+          # Inserting elements at a specific index
+
+          nums = [10, 20, 30, 40, 50]
+
+          # Insert 25 at index 2
+          nums.insert(2, 25) 
+
+          print(nums)
+          >>> [10, 20, 25, 30, 40, 50]
+        </code></pre>
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Combining-Lists">Combining Lists</a></h4>
+
+        <pre><code class="python code-snippet">
           # If you want to combine two lists together, use the extend() function 
 
+          nums1 = [1, 2, 3, 4, 5, 6]
           nums2 = [7, 8, 9, 10]
 
           nums1.extend(nums2)
@@ -250,6 +290,32 @@
           print(combinedList)
           >>> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         </code></pre>
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Deleting-Removing-List-Elements">Deleting / Removing List Elements</a></h4>
+
+        <pre><code class="python code-snippet">
+          # Deleting a specific element 
+
+          nums = [10, 11, 12, 13, 14, 15]
+          
+          del nums[2] # Delete the element at index 2
+
+          print(nums)
+          >>> [10, 11, 13, 14, 15]
+
+
+          # Deleting multiple elements
+          
+          nums = [10, 11, 12, 13, 14, 15]
+          
+          del nums[2 : 5] # Delete elements from indexes 2 to 4, not including 5
+
+          print(nums)
+          >>> [10, 11, 15]
+         
+        </code></pre>
+
 
 
         </div>
