@@ -462,7 +462,6 @@
 
           myList = ['S', 'J', 'U', 'S', 'A', 'T', 'A']
           
-          # sort the vowels
           myList.sort()
           
           print(myList)
@@ -491,6 +490,16 @@
           >>> [90, 76, 67, 54, 34, 23, 12]
 
 
+          # Sorting based on the length of each element
+
+          myList = ['Hello', 'I', 'Hope', 'This', 'Website', 'Is', 'Useful']
+
+          myList.sort(key=len)
+
+          print(myList)
+          >>> ['I', 'Is', 'Hope', 'This', 'Hello', 'Useful', 'Website']
+
+
           # Sorting 2D Lists
 
           studentTestScores = [['Mike', 90], 
@@ -499,6 +508,7 @@
                                ['Dave', 85],
                                ['Bill', 72]] 
               
+
           # Sort by the 2nd element in each list
           studentTestScores.sort(reverse = True, key = lambda x : x[1])
           
@@ -516,6 +526,7 @@
               {'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000},
           ]
           
+
           # Sort by Name (Ascending order)
           employees.sort(key = lambda x: x.get('Name'))
           
@@ -526,7 +537,7 @@
                {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000}]
           
 
-               
+
           # Sort by Age (Ascending order)
           employees.sort(key = lambda x: x.get('age'))
           
@@ -537,7 +548,53 @@
                {'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000}]
 
 
+
+          # The sorted() function can be used in the same way, without changing the original list
+
+          sortedBySalaries = sorted(employees, reverse = True, key = lambda x : x.get("salary"))
+
+          print(sortedBySalaries)
+          >>> [{'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000},
+               {'Name': 'Alan Turing', 'age': 25, 'salary': 10000}, 
+               {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000}, 
+               {'Name': 'John Hopkins', 'age': 18, 'salary': 1000}]
         </code></pre>
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Checking-List-Membership">Checking List Membership</a></h4>
+
+        <pre><code class="python code-snippet">
+          # Python makes it very easy to check if a particular element is in a list
+          
+          myList = ['S', 'J', 'U', 'S', 'A', 'T', 'A']
+
+          print('A' in myList)
+          >>> True
+
+          print('P' in myList)
+          >>> False
+
+
+          nums = [10, 20, 30, 40, 50]
+
+          print(10 in nums)
+          >>> True
+
+
+          # You can also check if an element is not in a List
+
+          reviews = ['Good', 'Great', 'Excellent']
+
+          print('Bad' not in reviews)
+          >>> True
+
+          
+          nums = [1, 2, 3, 4, 5, 6, 7, 8]
+          
+          print(10 not in nums)
+          >>> True
+        </code></pre>
+
 
 
         </div>
