@@ -114,13 +114,19 @@
       <div class="container" style="margin-left: 19%; padding-bottom: 50px;">
         <h3>Contents</h3>
         
-        <ul style="font-size: 19px;">
+        <ul style="font-size: 18px;">
           
           <li style="margin-top: 25px;"><a href="#Creating-a-List">Creating a List</a></li>
           <li style="margin-top: 15px;"><a href="##Accessing-List-Elements">Accessing List Elements</a></li>
           <li style="margin-top: 15px;"><a href="##Adding-Modifying-List-Elements">Adding / Modifying List Elements</a></li>
           <li style="margin-top: 15px;"><a href="##Combining-Lists">Combining Lists</a></li>
           <li style="margin-top: 15px;"><a href="##Deleting-Removing-List-Elements">Deleting / Removing List Elements</a></li>
+          <li style="margin-top: 15px;"><a href="##Counting-Elements-in-a-List">Counting the Number of Occurences of a List Element</a></li>
+          <li style="margin-top: 15px;"><a href="##Finding-the-Index-of-List-Elements">Finding the Index of List Elements</a></li>
+          <li style="margin-top: 15px;"><a href="##Sorting-Lists">Sorting Lists</a></li>
+          <li style="margin-top: 15px;"><a href="##Checking-List-Membership">Checking List Membership</a></li>
+          <li style="margin-top: 15px;"><a href="##Iterating-Through-Lists">Iterating Through Lists</a></li>
+          <li style="margin-top: 15px;"><a href="##List-Comprehension">List Comprehension</a></li>
         </ul>
 
       </div>
@@ -269,7 +275,7 @@
         <h4 style="margin-top: 50px;"><a id ="#Combining-Lists">Combining Lists</a></h4>
 
         <pre><code class="python code-snippet">
-          # If you want to combine two lists together, use the extend() function 
+          # If you want to combine two lists, use the extend() function 
 
           nums1 = [1, 2, 3, 4, 5, 6]
           nums2 = [7, 8, 9, 10]
@@ -313,13 +319,119 @@
 
           print(nums)
           >>> [10, 11, 15]
+
+
+          # Delete an entire List
+          del nums 
+
+
+          # Removing a specific element 
+
+          myList = ['S', 'J', 'U', 'S', 'A', 'T', 'A']
+
+          myList.remove('U')
+
+          print(myList)
+          >>> ['S', 'J', 'S', 'A', 'T', 'A']
+
+
+          # You can also use the pop() function to remove an item at a given index. 
+          # The pop() function removes and returns the last item if the index is not provided
+          # This helps us implement lists as stacks (first in, last out data structure)
          
+          myList = ['H', 'E', 'L', 'L', 'O']
+
+          secondElement = myList.pop(1)
+          
+          print(secondElement)
+          >>> E
+
+          print(myList)
+          >>> ['H', 'L', 'L', 'O']
+
+
+          lastElement = myList.pop()
+
+          print(lastElement)
+          >>> O
+
+          print(myList)
+          >>> ['H', 'L', 'L']
+    
+
+          # Empty a list
+
+          myList = ['S', 'A', 'T', 'A']
+
+          myList.clear()
+
+          print(myList)
+          >>> []
+        </code></pre>
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Counting-Elements-in-a-List">Counting the Number of Occurences of a List Element</a></h4>
+
+        <pre><code class="python code-snippet">
+          # The count() function returns the number of times the specified element appears in the list
+
+          myList = ['S', 'J', 'U', 'S', 'A', 'T', 'A']
+
+          count = myList.count('S')
+          
+          print(count)
+          >>> 2
+
+          count = myList.count('I')
+
+          print(count)
+          >>> 0
+        </code></pre>
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Finding-the-Index-of-List-Elements">Finding the Index of List Elements</a></h4>
+
+        <pre><code class="python code-snippet">
+          # The index() function returns the index of the specified element in the list
+          # The index() function only returns the index of the first occurrence of the matching element
+
+          myList = ['S', 'J', 'U', 'S', 'A', 'T', 'A']
+
+          index = myList.index('J')
+          
+          print(index)
+          >>> 1
+
+          index = myList.index('S')
+
+          print(index)
+          >>> 0
+
+          index = myList.index('P')
+          >>> ValueError: 'P' is not in list
+
+
+          # The index() function can also take a maximum of three arguments:
+          # element - the element to be searched
+          # start (optional) - start searching from this index
+          # end (optional) - search the element up to this index
+
+          myList = ['H', 'E', 'L', 'L', 'O', 'W', 'O', 'R', 'L', 'D']
+
+          index = myList.index('O', 5) # Start searching from index 5 to the end 
+
+          print(index)
+          >>> 6
+
+          index = myList.index('L', 1, 5)
+
+          print(index)
+          >>> 2
         </code></pre>
 
 
 
         </div>
-
 
     </main>
     <!-- ====================== End Main Area ====================== -->
