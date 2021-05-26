@@ -130,6 +130,7 @@
           <li style="margin-top: 15px;"><a href="##Checking-List-Membership">Checking List Membership</a></li>
           <li style="margin-top: 15px;"><a href="##Iterating-Through-Lists">Iterating Through Lists</a></li>
           <li style="margin-top: 15px;"><a href="##List-Comprehension">List Comprehension</a></li>
+          <li style="margin-top: 15px;"><a href="##Filtering-and-Mapping-Lists">Filtering and Mapping Lists</a></li>
         </ul>
 
       </div>
@@ -432,6 +433,111 @@
           >>> 2
         </code></pre>
 
+
+        <h4 style="margin-top: 50px;"><a id ="#Sorting-Lists">Sorting Lists</a></h4>
+
+        <pre><code class="python code-snippet">
+          # There are two ways of sorting lists in python:
+          # The sort() function modifies the original list, arranging the elements in 
+          # ascending or descending order
+          
+          # By default, sort() doesn't require any parameters. However, it has two optional parameters:
+          # reverse - If True, the sorted list is reversed (or sorted in Descending order)
+          # key - function that serves as a key for the sort comparison
+
+          myList = [100, 32, 89, 12, 56, 24, 78]
+
+          myList.sort()
+          
+          print(myList)
+          >>> [12, 24, 32, 56, 78, 89, 100]
+
+          myList.sort(reverse=True)
+
+          print(myList)
+          >>> [100, 89, 78, 56, 32, 24, 12]
+
+
+          # Sorting by alphabetical order
+
+          myList = ['S', 'J', 'U', 'S', 'A', 'T', 'A']
+          
+          # sort the vowels
+          myList.sort()
+          
+          print(myList)
+          >>> ['A', 'A', 'J', 'S', 'S', 'T', 'U']
+
+
+          # Python also has a built-in sorted() function for the same purpose
+          # The sorted() function does not change the original list, instead it returns the sorted List
+
+          myList = [34, 23, 90, 12, 67, 54, 76]
+
+          sortedList = sorted(myList)
+
+          print(sortedList)
+          >>> [12, 23, 34, 54, 67, 76, 90]
+          
+          print(myList)
+          >>> [34, 23, 90, 12, 67, 54, 76]
+
+
+          # The reverse parameter can also be used to sort by descending order 
+
+          reversedSortedList = sorted(myList, reverse = True)
+
+          print(reversedSortedList)
+          >>> [90, 76, 67, 54, 34, 23, 12]
+
+
+          # Sorting 2D Lists
+
+          studentTestScores = [['Mike', 90], 
+                               ['Chris', 76],
+                               ['Steve', 92],
+                               ['Dave', 85],
+                               ['Bill', 72]] 
+              
+          # Sort by the 2nd element in each list
+          studentTestScores.sort(reverse = True, key = lambda x : x[1])
+          
+          print(studentTestScores)
+          >>> [['Steve', 92], ['Mike', 90], ['Dave', 85], ['Chris', 76], ['Bill', 72]]
+
+
+
+          # Sorting a list of dictionaries 
+
+          employees = [
+              {'Name': 'Alan Turing', 'age': 25, 'salary': 10000},
+              {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000},
+              {'Name': 'John Hopkins', 'age': 18, 'salary': 1000},
+              {'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000},
+          ]
+          
+          # Sort by Name (Ascending order)
+          employees.sort(key = lambda x: x.get('Name'))
+          
+          print(employees)
+          >>> [{'Name': 'Alan Turing', 'age': 25, 'salary': 10000},
+               {'Name': 'John Hopkins', 'age': 18, 'salary': 1000}, 
+               {'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000}, 
+               {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000}]
+          
+
+               
+          # Sort by Age (Ascending order)
+          employees.sort(key = lambda x: x.get('age'))
+          
+          print(employees)
+          >>> [{'Name': 'John Hopkins', 'age': 18, 'salary': 1000},
+               {'Name': 'Alan Turing', 'age': 25, 'salary': 10000}, 
+               {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000},
+               {'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000}]
+
+
+        </code></pre>
 
 
         </div>
