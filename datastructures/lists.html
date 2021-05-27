@@ -167,6 +167,30 @@
           >>> [1, 2, 3, 1, 2, 3, 1, 2, 3]
 
 
+          # The range() function can also be used to generate a list of numbers
+          # The parameters of the range() function are: 
+          #  start: Starting number
+          #  stop: Ending number (non-inclusive)
+          #  step_size: How much to increment with each step, defaults to 1 if not provided
+
+          nums = list(range(10)) 
+
+          print(nums)
+          >>> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+          nums = list(range(10, 15))
+
+          print(nums)
+          >>> [10, 11, 12, 13, 14]
+
+
+          nums = list(range(2, 20, 2))
+
+          print(nums)
+          >>> [2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+
           # Lists can also contain different data types
           myList = [5, "Hello", 3.14, True]
 
@@ -452,7 +476,7 @@
           print(myList)
           >>> [12, 24, 32, 56, 78, 89, 100]
 
-          myList.sort(reverse=True)
+          myList.sort(reverse = True)
 
           print(myList)
           >>> [100, 89, 78, 56, 32, 24, 12]
@@ -627,7 +651,7 @@
               25 
           
 
-          # You can also use the enumerate() function to access each element and its index easily
+          # You can also use the enumerate() function to access each element and its corresponding index 
 
           myList = ['H', 'E', 'L', 'L', 'O']
 
@@ -659,7 +683,7 @@
               O D
 
           
-          # Another example of the zip() function
+          # Another example using the zip() function
 
           words1 = ['laptop', 'phone', 'speaker', 'camera']
           words2 = ['book', 'pen', 'marker', 'eraser']
@@ -696,7 +720,7 @@
               NVDA 620 
 
           
-          # Or more simply:
+          # Or simply:
 
           for row in stockPrices:
     
@@ -711,6 +735,68 @@
               PYPL 260 
               NVDA 620 
         </code></pre>
+
+
+        <h4 style="margin-top: 50px;"><a id ="#List-Comprehension">List Comprehension</h4>
+
+        <pre><code class="python code-snippet">
+          # List comprehension is a short and concise way to create a list 
+
+          powersOf2 = [2 ** x for x in range(10)] # All powers of 2 from 0 to 9
+
+          print(powersOf2)
+          >>> [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+
+
+          # The code above is equivalent to:
+
+          powersOf2 = []
+          for x in range(10):
+            powersOf2.append(2 ** x)
+
+
+          # More examples of list comprehension
+
+          name = 'Faizan'
+
+          nameLetters = [letter for letter in name]
+          
+          print(nameLetters)
+          >>> ['F', 'a', 'i', 'z', 'a', 'n']
+
+
+          listOfWords = ['Computer', 'Science', 'is', 'Life']
+
+          items = [word[0] for word in listOfWords] # Returns a list containing the first letter of each word in listOfWords
+
+          print(items)
+          >>> ['C', 'S', 'i', 'L']
+
+
+          # You can also include if conditionals within a list comprehension
+
+          prices = [50, 35, 89, 65, 23, 54, 32, 48, 73]
+
+          pricesAbove50 = [x for x in prices if x > 50]
+
+          print(pricesAbove50)
+          >>> [89, 65, 54, 73]
+
+          
+          sentence = 'The rocket came back from mars'
+          
+          vowels = [i for i in sentence if i in 'aeiou'] # Returns a list of all the vowels in the sentence
+          
+          print(vowels)
+          >>> ['e', 'o', 'e', 'a', 'e', 'a', 'o', 'a']
+
+
+          oddNums = [x for x in range(20) if x % 2 == 1]
+          
+          print(oddNums)
+          >>> [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+        </code></pre>
+
 
 
 
