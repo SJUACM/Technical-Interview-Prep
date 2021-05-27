@@ -130,7 +130,7 @@
           <li style="margin-top: 15px;"><a href="##Checking-List-Membership">Checking List Membership</a></li>
           <li style="margin-top: 15px;"><a href="##Iterating-Over-Lists">Iterating Over Lists</a></li>
           <li style="margin-top: 15px;"><a href="##List-Comprehension">List Comprehension</a></li>
-          <li style="margin-top: 15px;"><a href="##Filtering-and-Mapping-Lists">Filtering and Mapping Lists</a></li>
+          <li style="margin-top: 15px;"><a href="##Mapping-and-Filtering-Lists">Mapping and Filtering Lists</a></li>
         </ul>
 
       </div>
@@ -798,7 +798,65 @@
         </code></pre>
 
 
+        <h4 style="margin-top: 50px;"><a id ="#Mapping-and-Filtering-Lists">Mapping and Filtering Lists</h4>
 
+        <pre><code class="python code-snippet">
+          # The map() function can be used to apply a function to each element in a list
+          # Syntax: map(function, iterable)
+
+          def squared(n):
+            return n ** 2
+      
+          nums = [1, 2, 3, 4, 5]
+
+          squaredNums = list(map(squared, nums))
+
+          print(squaredNums)
+          >>> [1, 4, 9, 16, 25]
+
+
+          # Lambda expressions can also be used to achieve the same result
+
+          squaredNums2 = list(map(lambda x: x ** 2, nums))
+
+          print(squaredNums2)
+          >>> [1, 4, 9, 16, 25]
+
+
+          # More examples of using the map() function
+
+          negativeNums = [-92, -34, -54, -21, -45, -74]
+
+          absNums = list(map(abs, negativeNums)) # abs() is the absolute value function
+
+          print(absNums)
+          >>> [92, 34, 54, 21, 45, 74]
+
+
+          words = ["processing", "strings", "with", "map"]
+
+          capitalizedWords = list(map(str.capitalize, words))
+
+          print(capitalizedWords)
+          >>> ['Processing', 'Strings', 'With', 'Map']
+
+
+          # Filtering Lists
+
+          scores = [74, 63, 86, 95, 50, 82, 91, 68]
+          scoresAbove70 = list(filter(lambda score: score >= 70, scores))
+
+          print(scoresAbove70)
+          >>> [74, 86, 95, 82, 91]
+
+
+          words = ['sky', 'cloud', 'wood', 'forest', 'tie', 'nice', 'cup', 'trees']
+
+          wordsLen3 = list(filter(lambda s: len(s) == 3, words))
+
+          print(wordsLen3)
+          >>> ['sky', 'tie', 'cup']
+        </code></pre>
 
         </div>
 
