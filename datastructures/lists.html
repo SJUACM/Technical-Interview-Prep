@@ -128,7 +128,7 @@
           <li style="margin-top: 15px;"><a href="##Finding-the-Index-of-List-Elements">Finding the Index of List Elements</a></li>
           <li style="margin-top: 15px;"><a href="##Sorting-Lists">Sorting Lists</a></li>
           <li style="margin-top: 15px;"><a href="##Checking-List-Membership">Checking List Membership</a></li>
-          <li style="margin-top: 15px;"><a href="##Iterating-Through-Lists">Iterating Through Lists</a></li>
+          <li style="margin-top: 15px;"><a href="##Iterating-Over-Lists">Iterating Over Lists</a></li>
           <li style="margin-top: 15px;"><a href="##List-Comprehension">List Comprehension</a></li>
           <li style="margin-top: 15px;"><a href="##Filtering-and-Mapping-Lists">Filtering and Mapping Lists</a></li>
         </ul>
@@ -593,6 +593,123 @@
           
           print(10 not in nums)
           >>> True
+        </code></pre>
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Iterating-Over-Lists">Iterating Over Lists</h4>
+
+        <pre><code class="python code-snippet">
+          # There are two main ways to iterate over Lists
+
+          # Iterating over each element by index
+
+          nums = [5, 10, 15, 20, 25]
+          
+          for x in range(len(nums)):
+            print(nums[x])
+
+          >>> 5
+              10
+              15
+              20
+              25
+
+
+          # Or you can directly access each element in the list like this:
+
+          for x in nums:
+            print(x)
+
+          >>> 5
+              10
+              15
+              20
+              25 
+          
+
+          # You can also use the enumerate() function to access each element and its index easily
+
+          myList = ['H', 'E', 'L', 'L', 'O']
+
+          for index, element in enumerate(myList):
+            print(index, element)
+
+          >>> 0 H
+              1 E
+              2 L
+              3 L
+              4 O
+
+
+          # The zip() function can also be used to easily iterate over two lists at once
+
+          list1 = ['H', 'E', 'L', 'L', 'O']
+          list2 = ['W', 'O', 'R', 'L', 'D']
+
+          # Here, l1 represents the corresponding element from list1 
+          # l2 represents the corresponding element from list2
+
+          for l1, l2 in zip(list1, list2):
+            print(l1, l2)
+          
+          >>> H W
+              E O
+              L R
+              L L
+              O D
+
+          
+          # Another example of the zip() function
+
+          words1 = ['laptop', 'phone', 'speaker', 'camera']
+          words2 = ['book', 'pen', 'marker', 'eraser']
+          
+          for w1, w2 in zip(words1, words2):
+          
+              print(w1, w2)
+
+          >>> laptop book
+              phone pen
+              speaker marker
+              camera eraser
+
+
+          # Iterating over a 2D list
+
+          stockPrices = [['AAPL', 125],
+                         ['MSFT', 250],
+                         ['PYPL', 260],
+                         ['NVDA', 620]]
+               
+
+          for row in range(len(stockPrices)):
+              
+            for col in range(len(stockPrices[row])): 
+                  
+                print(stockPrices[row][col], end = ' ')
+                  
+            print()
+
+          >>> AAPL 125 
+              MSFT 250 
+              PYPL 260 
+              NVDA 620 
+
+          
+          # Or more simply:
+
+          for row in stockPrices:
+    
+              for item in row: 
+                
+                  print(item, end = ' ')
+                
+            print()
+
+          >>> AAPL 125 
+              MSFT 250 
+              PYPL 260 
+              NVDA 620 
         </code></pre>
 
 
