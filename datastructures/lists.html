@@ -50,7 +50,7 @@
                       <a class="nav-link active" href="../datastructures.html">Data Structures</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../About Me.html">Algorithms</a>
+                      <a class="nav-link" href="../algorithms.html">Algorithms</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="../projects.html">Practice Problems</a>
@@ -107,33 +107,33 @@
                         <a href="#" class="list-group-item list-group-item-action">Graphs</a>
                       </div>  
 
-
+                      <div class="col-lg-6 col-md-12" style="margin-left: 8%; padding-bottom: 50px;">
+                        <h3>Contents</h3>
+                        
+                        <ul style="font-size: 18px;">
+                          
+                          <li style="margin-top: 25px;"><a href="#Creating-a-List">Creating a List</a></li>
+                          <li style="margin-top: 15px;"><a href="##Accessing-List-Elements">Accessing List Elements</a></li>
+                          <li style="margin-top: 15px;"><a href="##Adding-Modifying-List-Elements">Adding / Modifying List Elements</a></li>
+                          <li style="margin-top: 15px;"><a href="##Combining-Lists">Combining Lists</a></li>
+                          <li style="margin-top: 15px;"><a href="##Deleting-Removing-List-Elements">Deleting / Removing List Elements</a></li>
+                          <li style="margin-top: 15px;"><a href="##Counting-Elements-in-a-List">Counting the Number of Occurences of a List Element</a></li>
+                          <li style="margin-top: 15px;"><a href="##Finding-the-Index-of-List-Elements">Finding the Index of List Elements</a></li>
+                          <li style="margin-top: 15px;"><a href="##Sorting-Lists">Sorting Lists</a></li>
+                          <li style="margin-top: 15px;"><a href="##Checking-List-Membership">Checking List Membership</a></li>
+                          <li style="margin-top: 15px;"><a href="##Iterating-Over-Lists">Iterating Over Lists</a></li>
+                          <li style="margin-top: 15px;"><a href="##List-Comprehension">List Comprehension</a></li>
+                          <li style="margin-top: 15px;"><a href="##Mapping-and-Filtering-Lists">Mapping and Filtering Lists</a></li>
+                        </ul>
+                
+                      </div>
 
                   </div>
               </div>
           </section>
       <!-- ====================== End Banner Area ====================== -->
 
-      <div class="container" style="margin-left: 19%; padding-bottom: 50px;">
-        <h3>Contents</h3>
-        
-        <ul style="font-size: 18px;">
-          
-          <li style="margin-top: 25px;"><a href="#Creating-a-List">Creating a List</a></li>
-          <li style="margin-top: 15px;"><a href="##Accessing-List-Elements">Accessing List Elements</a></li>
-          <li style="margin-top: 15px;"><a href="##Adding-Modifying-List-Elements">Adding / Modifying List Elements</a></li>
-          <li style="margin-top: 15px;"><a href="##Combining-Lists">Combining Lists</a></li>
-          <li style="margin-top: 15px;"><a href="##Deleting-Removing-List-Elements">Deleting / Removing List Elements</a></li>
-          <li style="margin-top: 15px;"><a href="##Counting-Elements-in-a-List">Counting the Number of Occurences of a List Element</a></li>
-          <li style="margin-top: 15px;"><a href="##Finding-the-Index-of-List-Elements">Finding the Index of List Elements</a></li>
-          <li style="margin-top: 15px;"><a href="##Sorting-Lists">Sorting Lists</a></li>
-          <li style="margin-top: 15px;"><a href="##Checking-List-Membership">Checking List Membership</a></li>
-          <li style="margin-top: 15px;"><a href="##Iterating-Over-Lists">Iterating Over Lists</a></li>
-          <li style="margin-top: 15px;"><a href="##List-Comprehension">List Comprehension</a></li>
-          <li style="margin-top: 15px;"><a href="##Mapping-and-Filtering-Lists">Mapping and Filtering Lists</a></li>
-        </ul>
-
-      </div>
+      
 
       <div class="container" style="margin-left: 20%; padding-bottom: 50px;">
         
@@ -844,6 +844,7 @@
           # Filtering Lists
 
           scores = [74, 63, 86, 95, 50, 82, 91, 68]
+          
           scoresAbove70 = list(filter(lambda score: score >= 70, scores))
 
           print(scoresAbove70)
