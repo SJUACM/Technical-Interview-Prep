@@ -16,24 +16,6 @@
         margin: 0%;
     }
 
-    .projects {
-        margin-top: -180px;
-    }
-
-    .project-cards {
-        margin-top: -100px;
-    }
-    
-    .skills-image-area {
-        margin-top: 60px;
-        margin-bottom: 4rem;
-        padding-left: 8%;
-    }
-
-    .skills-text {
-        padding-left: 15%;   
-    }
-
     .col-lg-4 > .single-brand > img {
         width: 100px;
         height: 100px;
@@ -62,159 +44,23 @@
         /* 250px */
     }
 
-    .skills-image-area {
-        padding-right: 15%;
-        padding-bottom: 10%;
-        align-items: center;
-    }
 
-    .col-lg-4 > .single-brand{
-        padding-bottom: 10%;
-        height: 80%;
-        width: 80%;
-    }
-
-    .skills-text {
-        padding-left: 12%;
-    }
-
-    .checkout {
-        padding-right: 3%;
-    }
-
-    .blog > .owl-carousel {
-        padding-left: 5%;
-    }
-    
-
-    .owl-prev {
-        padding-left: 3%;
-    }
-
-    .owl-carousel {
-        right: 6.5%;
-    }
-
-    .item {
-        width: 80%;
-        height: 425px;
-        margin-bottom: 14%;
-    }
-
-    .owl-pagination {
-        position: absolute;
-        padding-left: 12%;
-      }
-
-      .about-image {
-          display: none;
-      }
-
-    .about-title {
-        margin-top: -50px;
-    }
-
-    .blog-title {
-        padding-top: 1%;
-        padding-left: 10%;
-        padding-right: 10%;
-
-    }
-
-    .about-me-text > h3 {
-        padding-right: 30px;
-        line-height: 40px;
-    }
-
-    .ai-research-text {
-        margin-top: -60px;
-    }
-
-    .vu-text-2  {
-        margin-top: -10px;
-     }
- 
-     .vu-text {
-         margin-top: -120px;
-     }
- 
-     .vu-image {
-         margin-right: 10%;
-         margin-top: -40px;
-     }
-
-     .spotify-proj {
-         margin-top: -150px;
-     }
-
-     .nba-proj {
-         margin-top: 5px;
-      }
-
-      .project-cards {
-          margin-left: 3%;
-      }
-
-      .btn-project {
-          width: 100px;
-      }
-
-      .skills-image-area {
-        margin-left: 10%;
-    }
-
-
-    .projects {
-        margin-left: -14%;
-    }
-
-    .project-cards{
-        width: 600px;
-    }
-
-    .stockmarket-proj {
-        margin-top: 5px;
-    }
-    
-    .tai-text {
-        margin-top: -120px;
-    }
-
-    .tai-text-2 {
-        margin-top: 80px;
-    }
-
-    .tai-image {
-        margin-top: 20px;
-        margin-right: 10%;
-    }
 
   }
 
   @media only screen and (max-width: 1000px)
   {
-    .github-img {
-        padding-top: 50px;
-    }
+    
   }
 
   @media only screen and (max-width: 800px) {
-    .projects {
-        margin-left: 10%;
-    }
-  
-    .item {
-        height: 350px;
-        width: 350px;
-    }
+   
 
   }
 
   @media only screen and (max-width: 700px) {
-    .projects {
-        margin-left: 5%;
+   
     
-    }
   }
 
 
@@ -225,119 +71,6 @@
         margin-bottom: 14%;
     }
 
-    .blog-title {
-        padding-left: 10%;
-        padding-right: 10%;
 
-    }
-
-    .learn-more {
-        margin-top: -20px;
-        width: 150px;
-    }
-    
-    .linkedin {
-        margin-top: 25px;
-    }
-    
-    .btn-blog {
-        margin-top: 20px;
-    }
-
-    .project-cards {
-        width: 350px;
-        margin-left: 10px;
-    }
-
-    .init-desc > h1 {
-        padding-top: 15%;
-    }
-
-    .about-me-text  {
-       margin-top: -80px;
-        
-    }
-
-    .vu-text-2  {
-       margin-top: -10px;
-    }
-
-    .vu-text {
-        margin-top: -100px;
-    }
-
-    .vu-image {
-        margin-right: 10%;
-    }
-
-    .learn-more {
-        margin-top: 5px;
-    }
-
-    .about-title {
-        margin-top: -100px;
-    }
-
-    .about-area {
-        margin-left: 8%;
-    }
-
-    .projects {
-        margin-left: -70px;
-        margin-top: 20px;
-    }
-
-
-    .ai-image{
-        margin-top: -100px;
-    }
-
-    .project-cards{
-        width: 500px;
-    }
-
-    .stockmarket-proj {
-        margin-top: 5px;
-    }
-    
-    .tai-text {
-        margin-top: -130px;
-    }
-
-    .tai-text-2 {
-        margin-top: 60px;
-    }
-    
-    .tai-image {
-        margin-top: -10px;
-    }
-
-    .lifeimg {
-        height: 275px;
-        width: 325px;
-    }
-
-    .lifeBlogTitle {
-        margin-top: 30px;
-    }
-
-
-    .bodypara {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .skills-area {
-        margin-left: -15px;
-    }
-
-    .item {
-        height: 415px;
-        width: 300px;
-    }
-
-    .blog-title {
-        margin-top: 5px;
-    }
 
   }
