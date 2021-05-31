@@ -50,5 +50,8 @@
         align-items: center;
     }
     
+    .card {
+        width: 85%;
+    }
 
   }
