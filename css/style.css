@@ -44,6 +44,10 @@
 
 /* Banner Area */
 
+.title-text {
+    margin-top: -75px;
+}
+
 .subheading {
     padding-top: 20px;
 }

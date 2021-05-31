@@ -11,28 +11,9 @@
 /* Half Browser */
 
 @media only screen and (max-width: 1200px){
-    .header_area.main-menu.navbar {
-        padding: 4%;
-        margin: 0%;
-    }
 
-    .col-lg-4 > .single-brand > img {
-        width: 100px;
-        height: 100px;
-    }
 
-    .col-lg-4 > .single-brand {
-        border: 1px solid var(--border-color);
-        text-align: center;
-        margin: 0.4rem -1rem;
-        width: 150px;
-        height: 150px;
-        cursor: pointer;
-        padding-top: 10%;
-        transition: transform 0.4s ease;
-    }
-
-  }
+}
 
 
 /* Minimized Browser */
@@ -53,24 +34,21 @@
     
   }
 
-  @media only screen and (max-width: 800px) {
-   
 
-  }
-
-  @media only screen and (max-width: 700px) {
-   
-    
-  }
-
+  /* Phone */
 
   @media only screen and (max-width: 400px){
-    .item {
-        width: 80%;
-        height: 475px;
-        margin-bottom: 14%;
+    
+    /* All the page titles */
+    .title-text {
+        margin-top: 5px;
     }
 
-
+    .dyn-img {
+        margin-top: -150px;
+        margin-right: 30%;
+        align-items: center;
+    }
+    
 
   }
