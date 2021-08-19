@@ -11,7 +11,7 @@ Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/
 
 | Topic    | Date  | Notebook Link |
 |-------------------|--------|-----|
-| Understanding the Importance of Time Complexity | Tuesday 9/14/21  | TBD
+| Understanding the Importance of Time Complexity | Tuesday 9/14/21  | [Here](https://colab.research.google.com/drive/1QFA1j2D17FNgX78GIHFpVudNPW8zmSvj?usp=sharing)
 | Maximum Subarray                                | TBD              |             
 |                                                 |                  |             
 
