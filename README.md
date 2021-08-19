@@ -2,8 +2,6 @@
 A full guide on how to prepare for technical interviews! From soft skills to algorithm analysis, this github page provides the necessary material to help you secure a job offer!
 
 **Check out this repository's website here: https://sjuacm.github.io/Technical-Interview-Prep/**
-  - Check out the code for the website [here](https://github.com/SJUACM/Technical-Interview-Prep/tree/gh-pages)
-
 
 Access the [Cracking the Coding Interview Free E-Book here](https://cin.ufpe.br/~fbma/Crack/Cracking%20the%20Coding%20Interview%20189%20Programming%20Questions%20and%20Solutions.pdf)  
 
