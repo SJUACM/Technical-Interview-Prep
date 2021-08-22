@@ -9,11 +9,11 @@ A full guide on how to prepare for technical interviews! From soft skills to alg
 
 ## Fall 2021 Technical Interview Prep Sessions
 
-| Topic    | Date  | Notebook Link |
-|-------------------|--------|-----|
-| Understanding the Importance of Time Complexity | Tuesday 9/14/21  | TBD
-| Maximum Subarray                                | TBD              |             
-|                                                 |                  |             
+| Topic    | Date  | Problem(s) Covered | Notebook Link | 
+|----------|-------|--------------------|---------------|
+| Understanding the Importance of Time Complexity | Tuesday 9/14/21  | Fibonacci Sequence | TBD
+| Optimizing Time Complexity                      | TBD              | Max Subarray, SumofTwo  | TBD      
+|                                                 |                  |       |      
 
 # Contents
   - [Data-Structures](#Data-Structures)
