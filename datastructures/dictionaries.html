@@ -153,8 +153,13 @@
                    'Age' : 20}
                    
 
+          # You can also create a dictionary of lists
+          studentTestGrades = {'Faizan' : [90, 97, 85, 88],
+                                'John' : [93, 87, 91, 94], 
+                                'Mike' : [94, 88, 96, 86]}
+          
 
-         # You can also use the dict() function 
+         # You can also use the dict() function to create a dictionary 
          fruits = dict({1 : 'Apple', 2 : 'Orange', 3: 'Banana'})
         </code></pre>
 
@@ -176,6 +181,14 @@
 
           print(age)
           >>> 20
+
+
+          studentTestGrades = {'Faizan' : [90, 97, 85, 88],
+                               'John' : [93, 87, 91, 94], 
+                               'Mike' : [94, 88, 96, 86]}
+                        
+          print(studentTestGrades['Faizan'])
+          >>> [90, 97, 85, 88]
 
 
           # You can also use the get() function 
@@ -373,6 +386,20 @@
               Texas -> Austin
           
 
+          # Another example
+
+          studentTestGrades = {'Faizan' : [90, 97, 85, 88],
+                               'John' : [93, 87, 91, 94], 
+                               'Mike' : [94, 88, 96, 86]}
+
+          for key, value in studentTestGrades.items():
+              print(f"{key} : {value}")
+          
+          >>> Faizan : [90, 97, 85, 88]
+              John : [93, 87, 91, 94]
+              Mike : [94, 88, 96, 86]
+
+
           # Print every key
 
           for key in capitals:
@@ -396,7 +423,31 @@
         </code></pre>
 
 
-      
+
+        <h4 style="margin-top: 50px;"><a id ="#Dict-Comprehension">Dictionary Comprehension</a></h4>
+
+        <pre><code class="python code-snippet">
+          # Create dictionaries compactly in one line
+          
+          cities = ['New York', 'Tokyo', 'Paris']
+          countries = ['USA', 'Japan', 'France']
+
+          dict1 = {key: value for key, value in zip(cities, countries)}
+          
+          print(dict1)
+          >>> {'New York': 'USA', 'Tokyo': 'Japan', 'Paris': 'France'}
+
+
+          # Another example
+
+          squares = {x: x*x for x in range(6)}
+
+          print(squares)
+          >>> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+        </code></pre>
+
+
+        
         </div>
 
     </main>
