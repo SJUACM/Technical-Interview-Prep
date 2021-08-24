@@ -111,12 +111,13 @@
                         <ul style="font-size: 18px;">
                           
                            <li style="margin-top: 25px;"><a href="#Creating-a-Dict">Creating a Dictionary</a></li> 
-                           <li style="margin-top: 15px;"><a href="##Accessing-Dict-Elements">Accessing Dictionary Elements</a></li> 
-                           <li style="margin-top: 15px;"><a href="##Adding-Dict-Elements">Adding & Modifying Dictionary Elements</a></li> 
-                           <li style="margin-top: 15px;"><a href="##Removing-Dict-Elements">Removing Dictionary Elements</a></li> 
+                           <li style="margin-top: 15px;"><a href="##Accessing-Dict-Items">Accessing Dictionary Items</a></li> 
+                           <li style="margin-top: 15px;"><a href="##Adding-Dict-Items">Adding & Modifying Dictionary Items</a></li> 
+                           <li style="margin-top: 15px;"><a href="##Removing-Dict-Items">Removing Dictionary Items</a></li> 
                            <li style="margin-top: 15px;"><a href="##Checking-Dict-Membership">Checking Dictionary Membership</a></li> 
                            <li style="margin-top: 15px;"><a href="##Sorting-Dict">Sorting Dictionaries</a></li> 
                            <li style="margin-top: 15px;"><a href="##Iterating-Over-Dict">Iterating Over Dictionaries</a></li> 
+                           <li style="margin-top: 15px;"><a href="##Dict-Comprehension">Dictionary Comprehension</a></li> 
                           
                         </ul>
                 
@@ -138,24 +139,261 @@
           dict1 = {}
 
           # Adding elements to a dictionary
-          dict1 = {'AAPL' : 'Apple', 
+          # Elements to the left of the : are known as keys
+          # Elements to the right of the : are known as values
+
+          stocks = {'AAPL' : 'Apple', 
                   'MSFT' : 'Microsoft',
                   'GOOG' : 'Google'}
 
 
           # Another example
-          dict2 = {'Name' : 'Faizan',
+          student = {'Name' : 'Faizan',
                    'Major' : 'Computer Science',
                    'Age' : 20}
                    
 
 
          # You can also use the dict() function 
-         dict3 = dict({1 : 'Apple', 2 : 'Orange'})
+         fruits = dict({1 : 'Apple', 2 : 'Orange', 3: 'Banana'})
+        </code></pre>
 
+        <h4 style="margin-top: 50px;"><a id ="#Accessing-Dict-Items">Accessing Dictionary Items</a></h4>
+
+        <pre><code class="python code-snippet">
+          # Accessing an item with the key 
+
+          student = {'Name' : 'Faizan',
+                   'Major' : 'Computer Science',
+                   'Age' : 20}
+          
+          name = student['Name']
+
+          print(name)
+          >>> Faizan
+
+          age = student['Age']
+
+          print(age)
+          >>> 20
+
+
+          # You can also use the get() function 
+
+          car = {'brand': 'Tesla',
+                 'model': 'Model X',
+                 'year': 2021}
+          
+          model = car.get("model")
+          
+          print(model)
+          >>> Model X
+
+
+          # Accessing all dictionary keys
+
+          keys = car.keys()
+
+          print(list(keys))
+          >>> ['brand', 'model', 'year']
+
+
+          # Accessing all dictionary values
+
+          values = car.values()
+
+          print(list(values))
+          >>> ['Tesla', 'Model X', 2021]
+
+
+          # Accessing all dictionary items
+
+          items = car.items()
+
+          print(list(items))
+          >>> [('brand', 'Tesla'), ('model', 'Model X'), ('year', 2021)]
+        </code></pre>
+
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Adding-Dict-Items">Adding & Modifying Dictionary Items</a></h4>
+
+        <pre><code class="python code-snippet">
+          # Adding items to a dictionary
+
+          address = {'street' : 123,
+                     'avenue' : 85,
+                     'city' : 'Lockwood'}
+
+          print(address)
+          >>> {'street': 123, 'avenue': 85, 'city': 'Lockwood'}
+
+          address['state'] = 'New York'
+          address['country'] = 'USA'
+
+          print(address)
+          >>> {'street': 123, 'avenue': 85, 'city': 'Lockwood', 'state': 'New York', 'country': 'USA'}
+
+
+          # Modifying Dictionary Items
+
+          address['city'] = 'Forest Hills'
+          address['state'] = 'California'
+
+          print(address)
+          >>> {'street': 123, 'avenue': 85, 'city': 'Forest Hills', 'state': 'California', 'country': 'USA'}
 
         </code></pre>
 
+        <h4 style="margin-top: 50px;"><a id ="#Removing-Dict-Items">Removing Dictionary Items</a></h4>
+
+        <pre><code class="python code-snippet">
+          # Removing items with the pop() function
+
+          capitals = {'New York' : 'Albany',
+                     'California' : 'Sacramento',
+                     'Florida' : 'Tallahassee',
+                     'Texas' : 'Austin'}
+
+          # Remove Florida from the dictionary and return its value
+
+          print(capitals.pop('Florida'))
+          >>> Tallahassee
+
+          # Florida is no longer in the dictionary
+          print(capitals)
+          >>> {'New York': 'Albany', 'California': 'Sacramento', 'Texas': 'Austin'}
+          
+
+          # Another example with the popitem() function
+          
+          stocks = {'AAPL' : 'Apple',
+                    'MSFT' : 'Microsoft',
+                    'GOOG' : 'Google'}
+
+          # Remove the last item from of the dictionary and return it 
+          # Returns the key : value pair
+
+          print(stocks.popitem())
+          >>> ('GOOG', 'Google')
+
+          # Google is no longer in the dictionary
+
+          print(stocks)
+          >>> {'AAPL': 'Apple', 'MSFT': 'Microsoft'}
+
+
+          # Remove all items from the dictionary
+
+          stocks.clear()
+
+          print(stocks)
+          >>> {}
+        </code></pre>
+
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Checking-Dict-Membership">Checking Dictionary Membership</a></h4>
+
+        <pre><code class="python code-snippet">
+          # Simply use the keyword in to check if an item is in the dictionary
+
+          stocks = {'AAPL' : 'Apple',
+                    'MSFT' : 'Microsoft',
+                    'GOOG' : 'Google'}
+
+          print('AAPL' in stocks)
+          >>> True
+
+          # Use the values() function to check if a value is in the dictionary
+          print('Microsoft' in stocks.values())
+          >>> True
+
+
+          print('FB' in stocks)
+          >>> False
+
+          print('NVDA' not in stocks):
+          >>> True
+        </code></pre>
+
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Sorting-Dict">Sorting Dictionaries</a></h4>
+
+        <pre><code class="python code-snippet">
+          # Utilize the sorted() and lambda functions to sort based on dictionary values
+          
+          studentGrades = {'John' : 90,
+                            'Mike' : 92,
+                            'James' : 85,
+                            'Brian' : 88,
+                            'Ken' : 95}
+
+          sortedGrades = sorted(studentGrades.items(), key = lambda x : x[1], reverse = True)
+
+          print(sortedGrades)
+          >>> [('Ken', 95), ('Mike', 92), ('John', 90), ('Brian', 88), ('James', 85)]
+
+
+          # The sorted() function can also be used to sort dictionary keys 
+          # In this case, we will sort by alphabetical order
+          
+          students = {'Faizan' : 3.9, 
+                      'Daniel' : 3.4,
+                      'Alex' : 3.7, 
+                      'Jake' : 3.6}
+
+          sortedStudents = sorted(students.items())
+
+          print(sortedStudents)
+          >>> [('Alex', 3.7), ('Daniel', 3.4), ('Faizan', 3.9), ('Jake', 3.6)]
+
+        </code></pre>
+
+
+
+        <h4 style="margin-top: 50px;"><a id ="#Iterating-Over-Dict">Iterating Over Dictionaries</a></h4>
+
+        <pre><code class="python code-snippet">
+          # Printing each key value pair
+          
+          capitals = {'New York' : 'Albany',
+                     'California' : 'Sacramento',
+                     'Florida' : 'Tallahassee',
+                     'Texas' : 'Austin'}
+
+
+          for key, value in capitals.items():
+              print(key + ' -> ' + value)
+          
+          >>> New York -> Albany
+              California -> Sacramento
+              Florida -> Tallahassee
+              Texas -> Austin
+          
+
+          # Print every key
+
+          for key in capitals:
+              print(key)
+
+          >>> New York
+              California
+              Florida
+              Texas
+
+          
+          # Print every value 
+
+          for value in capitals.values()
+              print(value)
+          
+          >>> Albany
+              Sacramento
+              Tallahassee
+              Austin
+        </code></pre>
 
 
       
