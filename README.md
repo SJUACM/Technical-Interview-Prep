@@ -11,7 +11,7 @@ A full guide on how to prepare for technical interviews! From soft skills to alg
 
 | Topic    | Date  | Problem(s) Covered | Notebook Link | 
 |----------|-------|--------------------|---------------|
-| Understanding the Importance of Time Complexity | TBD  | Fibonacci Sequence | TBD
+| Understanding the Importance of Time Complexity | TBD  | Fibonacci Sequence | [Link](https://colab.research.google.com/github/SJUACM/Technical-Interview-Prep/blob/main/SJU_ACM_Software_Engineering_Interview_Prep_.ipynb)
 | Optimizing Time Complexity                      | TBD              | Max Subarray, SumofTwo  | TBD      
 |                                                 |                  |       |      
 
